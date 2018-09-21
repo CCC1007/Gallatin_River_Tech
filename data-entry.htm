@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Database Entry</title>
+
+</head>
+<body><center>
+<h2>Add new Item to the database: </h2>
+<form name="Item-Entry" onsubmit="return submitItem()" method="post">
+<p>Width: <input type="number" name="width" min="0" required></p>
+<p>Height: <input type="number" name="height" min="0" required></p>
+<p>Depth: <input type="number" name="depth" min="0" required></p>
+<p>Mass: <input type="number" name="mass" min="0" required></p>
+<p>Count: <input type="number" name="count" min="1" required></p>
+<p>SKU: <input type="number" name="Identifier" min="0" required></p>
+<p><input type="reset"> <input type="submit" value="Submit"></p>
+</form>
+<div id="item-count"></div>
+<form name="End-Form" onsubmit="return finalizeTrailer()" method="post">
+<input type="submit" value="Finalize Trailer">
+</form>
+<div id="trailer-output"></div>
+</body>
+</html>
